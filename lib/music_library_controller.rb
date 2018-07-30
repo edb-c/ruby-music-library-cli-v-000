@@ -84,6 +84,7 @@ class MusicLibraryController
     user_input = gets.strip.to_i  
     puts list_songs.index = user_input
     if (1..Song.all.length).include?(user_input)
+      Song.all.sort{ |a, b| a.name <=> b.name }
       puts list_songs.index = user_input
     end
 
