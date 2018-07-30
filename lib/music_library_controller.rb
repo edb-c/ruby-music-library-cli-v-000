@@ -87,8 +87,6 @@ class MusicLibraryController
       asong = Song.all.sort{ |a, b| a.name <=> b.name }[user_input-1]
       puts "Playing #{asong.name} by #{asong.artist.name}"
     end
-
   end
-  
   
 end #class MusicLibraryController  
